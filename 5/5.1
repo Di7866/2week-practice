@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            nav {
+                text-align: right;
+                padding-bottom: 25px;
+                border-bottom: 1px dashed navy;
+            }
+
+            nav a {
+                color: blue;
+                margin: 10px;
+                text-decoration: none;
+            }
+
+            h1 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .text {
+                width: 300px;
+            }
+
+            .text p {
+                color: lightblue;
+                font-size: 35px;
+            }
+
+            .text i {
+                display: block;
+                text-align: right;
+            }
+            .text em {
+                display: block;
+                text-align: right;
+            }
+
+            .text p:hover {
+                font-size: 45px;
+                color: navy;
+            }
+
+            .text .right:hover {
+                color: darkorange;
+            }
+
+            .picture {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0px;
+                width: 500px;
+            }
+
+            .picture img {
+                width: 166.66px;
+                height: 250px;
+                object-fit: cover;
+            }
+            .image {
+                width: 166.66px;
+                height: 250px;
+                position: relative;
+                overflow: visible;
+            }
+
+            .image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0.5;
+            }
+
+            .image:hover img {
+                opacity: 1;
+                padding: 20px;
+                border: 3px solid navy;
+                z-index: 10;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav> 
+            <a href="">Сезонные акции</a>
+            <a href="">Контакты</a> 
+        </nav>
+        <h1>Горные экскурсии</h1>
+        <div class="container">
+            <div class="picture">
+                <div class="image">
+                <img src="https://b1.vpoxod.ru/ckeditor/12/59/bf/238441.jpg">
+                </div>
+                <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.1EMku1gVpaUGKqbJbkaLCgHaJ4?w=768&h=1024&rs=1&pid=ImgDetMain">
+                </div>
+                <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.4qApegojNZ6OSFVslm7cpAHaJ3?w=1000&h=1333&rs=1&pid=ImgDetMain">
+                </div>
+                
+                <div class="image">
+                <img src="https://b1.vpoxod.ru/ckeditor/12/59/bf/238441.jpg">
+                </div>
+                <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.1EMku1gVpaUGKqbJbkaLCgHaJ4?w=768&h=1024&rs=1&pid=ImgDetMain">
+                </div>
+                <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.4qApegojNZ6OSFVslm7cpAHaJ3?w=1000&h=1333&rs=1&pid=ImgDetMain">
+                </div>
+            </div>
+            <div class="text">
+                <p>Только</p>
+                <p><i class="right">горы!</i></p>
+                <p>Только</p>
+                <p><i class="right">вперёд!</i></p>
+            </div>
+        </div>
+    </body>
+</html>
